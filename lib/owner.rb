@@ -64,9 +64,9 @@ class Owner
       sold.mood = "nervous"
     end
 
-    # @pets[:dogs].each do |sold|
-    #   sold.mood = "nervous"
-    # end
+    @pets[:dogs].each do |sold|
+      sold.mood = "nervous"
+    end
 
     @pets = {}
   end
