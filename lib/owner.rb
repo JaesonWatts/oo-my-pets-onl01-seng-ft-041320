@@ -68,7 +68,7 @@ class Owner
       sold.mood = "nervous"
     end
 
-    @pets = {}
+    self.reset_all
   end
 
   def list_pets
