@@ -41,7 +41,7 @@ class Owner
   end
 
   def walk_dogs
-    @pets[:dogs].each do |dog|
+    @pets[:dogs].collect do |dog|
       dog.mood = "happy"
       binding.pry
     end
