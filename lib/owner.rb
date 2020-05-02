@@ -48,7 +48,7 @@ class Owner
   end
 
   def feed_cats
-    @pets[:cats].select {|feed| binding.pry feed.mood = "happy"}
+    @pets[:cats].select {|cat| cat.mood = "happy"}
   end
 
   def cats
