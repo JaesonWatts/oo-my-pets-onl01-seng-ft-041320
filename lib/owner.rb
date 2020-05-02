@@ -42,6 +42,7 @@ class Owner
   def walk_dogs
     @pets[:dogs].each do |walked|
       walked.mood = "happy"
+      binding.pry
     end
   end
 
