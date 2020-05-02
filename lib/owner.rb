@@ -62,13 +62,14 @@ class Owner
   def sell_pets
     @pets[:cats].each do |sold|
       sold.mood = "nervous"
+      sold.owner = nil
     end
 
     @pets[:dogs].each do |sold|
       sold.mood = "nervous"
+      sold.owner = nil
     end
-
-    @pets.clear
+    
   end
 
   def list_pets
