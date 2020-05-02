@@ -69,7 +69,7 @@ class Owner
       sold.mood = "nervous"
       sold.owner = nil
     end
-    
+
   end
 
   def list_pets
