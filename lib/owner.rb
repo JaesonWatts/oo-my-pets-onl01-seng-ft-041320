@@ -41,14 +41,13 @@ class Owner
   end
 
   def walk_dogs
-    @pets[:dogs].collect do |dog|
+    @pets[:dogs].each do |dog|
       dog.mood = "happy"
-      binding.pry
     end
   end
 
   def feed_cats
-    @pets[:cats].select {|cat| cat.mood = "happy"}
+    @pets[:cats].collect {|cat| cat.mood = "happy"}
   end
 
   def cats
